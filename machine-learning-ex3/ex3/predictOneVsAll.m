@@ -32,7 +32,7 @@ X = [ones(m, 1) X];
 
 A = X*all_theta';
 [w, z] = max(A, [], 2);
-p = z
+p = z;
 
 
 
