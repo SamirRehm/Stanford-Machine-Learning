@@ -14,6 +14,7 @@ grad = zeros(size(theta));
 constant = -1.0 / m;
 linear = X * theta;
 prediction = sigmoid(linear);
+disp(prediction);
 SummationTerms = y' * log(prediction) + (1-y)' *log(1-prediction);
 J = constant*sum(SummationTerms);
 
